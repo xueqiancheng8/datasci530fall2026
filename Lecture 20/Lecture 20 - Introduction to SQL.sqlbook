@@ -33,7 +33,8 @@ panel on the left:
 
 Delete existing table
 -- SQLBook: Code
--- Active: 1710903290079@@127.0.0.1@5432@postgres
+-- Active: 1794502083851@@127.0.0.1@5432@postgres
+-- Active: 1794502083851@@127.0.0.1@5432@postgres083851@@127.0.0.1@5432@postgres290079@@127.0.0.1@5432@postgres
 -- If the table already exists we can drop it:
 -- If it doesn't exist nothing happens
 -- System commands are in upper case and user defined
@@ -46,6 +47,7 @@ DROP TABLE IF EXISTS drivers;
 
 Create empty table from codebook
 -- SQLBook: Code
+-- Active: 1794502083851@@127.0.0.1@5432@postgres
 -- Create empty TABLE called "drivers"
 -- This example has five arguments separated by a comma
 -- that contain the "column_name" and "column_type", respectively
@@ -97,13 +99,17 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
+INSERT INTO drivers  VALUES (5, 'Xueqian Cheng', 'Chinese', 60);
 
+<<<<<<< Updated upstream:Lecture 20/Lecture 20 - Introduction to SQL.sqlbook
 INSERT INTO drivers VALUES (5,'Oscar Piastri','Australian',403)
 
 INSERT INTO drivers VALUES (8, 'Whitney Barr','American',1)
+=======
+INSERT INTO drivers  VALUES (6, 'Ladin Toplu', 'Turkish', 70);
+>>>>>>> Stashed changes:Lecture 20/Lecture 22 - Introduction to SQL.sqlbook
 
-
-
+INSERT INTO drivers  VALUES (7, 'Ye Yuan', 'Chinese', 80);
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
 
@@ -191,7 +197,8 @@ with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
 
-
+SELECT driver_id, nationality FROM drivers
+WHERE victories > 60
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> III. Groupby + Chaining </span>
