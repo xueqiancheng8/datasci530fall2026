@@ -6,3 +6,8 @@
 **/.DS_Store
 .DS_Store
 .DS_Store?
+
+# Project 3 raw data (UCI damage dataset: academic use only, do not redistribute)
+assignments/project3/data_raw/
+assignments/project3/data_clean/
+assignments/project3/explore_data.ipynb
